@@ -87,7 +87,7 @@ class APIHandler:
                 genai.configure(api_key=api_key)
                 
                 # 모델 초기화 및 호출
-                model = genai.GenerativeModel('gemini-pro')
+                model = genai.GenerativeModel('gemini-2.0-flash')
                 response = model.generate_content(
                     prompt,
                     generation_config={
